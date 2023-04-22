@@ -1,0 +1,74 @@
+.bar {
+    fill: #0072C6;
+  }
+  
+  .bar:hover {
+    fill: #004F82;
+  }
+  
+  .axis {
+    font-size: 24px;
+    fill: rgb(223, 17, 17)
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* CSS styles for the chart container */
+.chart-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+  }
+  
+  /* CSS styles for the chart */
+  .chart {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+  
+  /* CSS styles for the x and y axes */
+  .axis-x, .axis-y {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1px;
+  }
+  
+  /* CSS styles for the axis labels */
+  .axis-label {
+    font-size: 12px;
+    fill: #333;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #myChart {
+  
+    width: 10px;
+    height: 20px;
+  }
+
+  /* #container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  
+  } */

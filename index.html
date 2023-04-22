@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+   
+    <title>Data Visualization</title>
+</head>
+<body>
+    <h1 class="text-7xl text-center mt-10" id="ytTitle">
+        Flagarant
+    </h1>
+   <div class="">
+   
+    <div  class=" justify-end gap-x-8 items-center flex mr-20 mt-5">
+       <p>Select the channel </p>  
+       <select id="ChannelList">
+    <option value="0">    
+    Flagarant
+</option>
+    <option value="1">Huberman Labs</option>
+    <option value="2">Lex Fridman</option>
+       </select>
+    </div>
+   </div>
+   <h1 class="text-center text-4xl mt-4">
+    Monthly Gained subscribers
+</h1>
+<div class="chart-container">
+    
+    <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </div>
+    <div id="container" class="justify-center items-center">
+       <div class="flex justify-around w-full">
+        <h1 class="text-center text-4xl mt-4">
+            Views Per Video
+        </h1>
+        <h1 class="text-3xl my-5 text-center">
+            Gender Ratio
+            <div class="flex gap-4 justify-center
+            ">
+                <div class="flex justify-center items-center gap-2">
+                    <div class="h-4 w-4 bg-[#0072C6]">
+                      
+                    </div>
+                   <p class="text-xl">
+                    Male
+                   </p>
+                 </div>
+                 <div class="flex justify-center items-center  gap-2">
+                    <div class="h-4 w-4 bg-[#E84C3D]">
+                       
+                    </div>
+                   <p class="text-xl ">
+                    Female
+                   </p>
+                 </div>
+            </div>
+            
+        </h1>
+       
+    </div>
+    <div class="flex ">
+        <div id="chart"></div>
+        <div class="pl-20 pt-10" id="pie"></div>
+    </div>
+   
+</div> 
+
+  
+   
+      <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+<script src="./selectionChanger.js" type="module"></script>
+<script src="/pieChart.js" type="module"></script>
+<script src="/index.js" type="module"></script>
+<script src="lineChart.js " type="module"></script>
+<script type="module" src="./chartData.js"></script>
+</body>
+</html>
